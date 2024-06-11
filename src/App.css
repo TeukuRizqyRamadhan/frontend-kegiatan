@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+  width: 5%; 
+  text-align: center; 
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 70%; 
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 25%; 
+  text-align: center; 
+}
+
+.action-buttons button {
+  margin: 0 5px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Mengatur z-index agar modal muncul di atas konten lain */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  min-width: 350px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek hover */
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #666; /* Memberikan warna abu-abu pada tombol close */
+}
+
+.modal-save {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #646cff; /* Mengubah warna latar belakang tombol Simpan */
+  color: white; /* Mengubah warna teks tombol Simpan menjadi putih */
+  border: none; /* Menghilangkan border tombol Simpan */
+  border-radius: 5px; /* Memberikan sudut pada tombol Simpan */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Menambahkan efek transisi pada hover */
+}
+
+.modal-save:hover {
+  background-color: #5248e3; /* Mengubah warna latar belakang tombol Simpan saat dihover */
+}
