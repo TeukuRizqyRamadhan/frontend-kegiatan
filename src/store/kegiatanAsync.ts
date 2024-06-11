@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Kegiatan } from '../types';
 
 const API = axios.create({
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://kegiatan-be.vercel.app',
 });
 
 export const fetchKegiatan = createAsyncThunk('kegiatan/fetchKegiatan', async () => {
